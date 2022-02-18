@@ -1,2 +1,26 @@
-<h1>TP TodoList</h1>
+<div class="module">
+  <div class="title">
+    <h1>ToDo List</h1>
+  </div>
+
+<div class="container">
+  <form (submit)="create(newItem.value); newItem.value = ''">
+        <input class="addTask" placeholder="Add new task.." #newItem/>
+  </form>
+</div>
+
+<hr class="separator">
+
+<section *ngIf="todoListObs | async as tdl">
+  <h1 class="title">{{tdl.label}} </h1>
+  <ul class="taskList">
+    <button (click)="deleteAll(tdl.items)">CLEAR ALL</button>
+    <li *ngFor="let item of tdl.items">
+      <input class="mycheckbox" type="checkbox" id="scales" name="scales">
+      <label for="scales" class="label">{{item.label}}</label>
+      <button (click)="delete(item)" >DELETE</button>
+    </li>
+  </ul>
+</section>
+</div>
 

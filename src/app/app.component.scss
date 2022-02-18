@@ -1,0 +1,63 @@
+.module {
+  margin: 50px;
+  padding: 50px;
+  background: rgba(24, 24, 16, .2);
+  border-radius: 2em;
+  backdrop-filter: blur(25px);
+  border: 2px solid rgba(255, 255, 255, 0.05);
+  background-clip: padding-box;
+  box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
+  color: #FFFFFF;
+}
+
+.title{
+  text-align: center;
+  font-family: montserrat, monospace;
+  font-size: x-large;
+}
+
+::placeholder {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.container{
+  text-align: center;
+}
+
+input.addTask{
+  width: 70%;
+  display: center;
+  text-align: center;
+  font-size: 2em;
+  color: #747474;
+  padding : 0.5em;
+}
+
+.separator{
+  margin-top: 2em;
+  color: white
+}
+
+
+ul.taskList{
+  font-size: 2em;
+  list-style-type: none;
+  color: white;
+  width: 70%;
+  padding:15px;
+  margin:0 auto;
+}
+.mycheckbox{
+  width:30px;
+  height:30px;
+}
+
+
+li{ display:center;width :100%; border: solid 0.1em #3d84d675;background-color: #ffffffb2;color:#737773;margin-bottom: 10px;}
+
+label{ margin : 0.5em}
+input:checked + label {
+    text-decoration : line-through;
+}
+

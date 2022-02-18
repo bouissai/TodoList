@@ -18,7 +18,7 @@ let idItem = 0;
   providedIn: 'root'
 })
 export class TodolistService {
-  private subj = new BehaviorSubject<TodoList>({label: 'L3 MIAGE', items: [] });
+  private subj = new BehaviorSubject<TodoList>({label: 'My Task', items: [] });
   readonly observable = this.subj.asObservable();
 
   constructor() {
